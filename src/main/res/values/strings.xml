@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-  <string name="app_name">Crossword</string>
+  <string name="app_name">Crossword Solver</string>
 
   <string name="letters">Letters:</string>
   <string name="anagram">Anagram</string>
@@ -19,11 +19,6 @@
   <string name="num_0">0</string>
 
   <string name="about">About</string>
-  <string name="version" formatted="false"><a
-  href="https://github.com/billthefarmer/crossword/releases/latest">%s</a>\n\nBuilt
-  %s\n\nCopyright \u00A9 2017 Bill Farmer\n\nLicence <a
-  href="https://www.gnu.org/licenses/gpl.txt">GNU GPLv3</a>
-  </string>
 
   <string name="share">Share</string>
   <string name="theme">Theme</string>
@@ -35,5 +30,15 @@
   <string name="purple">Purple</string>
   <string name="red">Red</string>
   <string name="help">Help</string>
+  <string name="version" formatted="false">
+  <a href="https://github.com/jakyahmed/crossword-solver.git">%s</a>\n\n
+  Built %s\n\n
+  Based on original code by Bill Farmer\n
+  Copyright © 2017 Bill Farmer\n\n
+  Modified by Jaky Ahmed\n
+  Modifications: Updated word list to Indonesian language, added Indonesian translation,
+  updated SDK target to Android 34, and integrated ads.\n\n
+  Licence <a href="https://www.gnu.org/licenses/gpl.txt">GNU GPLv3</a>
+</string>
 
 </resources>

@@ -21,7 +21,7 @@
 //
 ///////////////////////////////////////////////////////////////////////////////
 
-package org.billthefarmer.crossword;
+package com.jaky.wordsolver;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -54,13 +54,13 @@ public class Data
     private static OnPostExecuteListener listener;
 
     // Letter values
-    private static final Integer values[] =
+    private static final Integer[] values =
     {
         1, 3, 3, 2, 1, 4, 2, 4, 1, 8, 5, 1, 3,
         1, 1, 3, 10, 1, 1, 1, 1, 4, 4, 8, 4, 10
     };
     // Letters
-    private static final Character letters[] =
+    private static final Character[] letters =
     {
         'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
         'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'
@@ -271,7 +271,7 @@ public class Data
             // Check each word in list
             for (String word : wordList)
             {
-                char p[];
+                char[] p;
                 if (word.length() <= 2)
                     continue;
 

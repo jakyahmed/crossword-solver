@@ -21,9 +21,8 @@
 //
 ///////////////////////////////////////////////////////////////////////////////
 
-package org.billthefarmer.crossword;
+package com.jaky.wordsolver;
 
-import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -32,7 +31,6 @@ import android.preference.PreferenceManager;
 import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.inputmethod.EditorInfo;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -171,7 +169,7 @@ public class Anagram extends Activity
 
         // Load words from resources
         if (data != null)
-            data.startLoadTask(this, R.raw.corncob_lowercase, wordList);
+            data.startLoadTask(this, R.raw.kata_id, wordList);
     }
 
     // onResume

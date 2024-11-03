@@ -5,7 +5,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.4.2'
+        classpath 'com.android.tools.build:gradle:8.5.2'
     }
 }
 
@@ -23,13 +23,13 @@ allprojects {
 apply plugin: 'com.android.application'
 
 android {
-    namespace "org.billthefarmer.crossword"
-    compileSdkVersion 31
-
+    namespace "com.jaky.wordsolver"
+    compileSdk 34
+    android.buildFeatures.buildConfig = true
     defaultConfig {
         applicationId "org.billthefarmer.crossword"
         minSdkVersion 21
-        targetSdkVersion 31
+        targetSdkVersion 34
         versionName "1.24"
         versionCode 124
 

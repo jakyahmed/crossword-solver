@@ -21,7 +21,7 @@
 //
 ///////////////////////////////////////////////////////////////////////////////
 
-package org.billthefarmer.crossword;
+package com.jaky.wordsolver;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -35,7 +35,6 @@ import android.text.Editable;
 import android.text.SpannableStringBuilder;
 import android.text.TextWatcher;
 import android.text.method.LinkMovementMethod;
-import android.util.Log;
 import android.util.TypedValue;
 import android.view.KeyEvent;
 import android.view.Menu;
@@ -258,7 +257,8 @@ public class Main extends Activity
 
         // Load words from resources
         if (data != null)
-            data.startLoadTask(this, R.raw.words_en, wordList);
+//            data.startLoadTask(this, R.raw.words_en, wordList);
+            data.startLoadTask(this,R.raw.kata_id,wordList);
     }
 
     // onResume
@@ -402,8 +402,8 @@ public class Main extends Activity
         if (textSize == 0)
             textSize = ((TextView) findViewById(R.id.chars)).getTextSize();
 
-        if (BuildConfig.DEBUG)
-            Log.d(TAG, "Size " + textSize);
+//        if (BuildConfig.DEBUG)
+//            Log.d(TAG, "Size " + textSize);
 
         for (int i = 0; i < letters.getChildCount(); i++)
         {
@@ -425,8 +425,8 @@ public class Main extends Activity
             if (newSize > textSize * 3)
                 newSize = textSize * 3;
 
-            if (BuildConfig.DEBUG)
-                Log.d(TAG, "New size " + newSize);
+//            if (BuildConfig.DEBUG)
+//                Log.d(TAG, "New size " + newSize);
 
             for (int i = 0; i < letters.getChildCount(); i++)
             {
@@ -793,7 +793,7 @@ public class Main extends Activity
                 return;
 
             // Split words
-            String words[] = text.split(SEPARATOR);
+            String[] words = text.split(SEPARATOR);
             final String word = words[0];
             // Check word
             if (word.length() > MAX_LENGTH)

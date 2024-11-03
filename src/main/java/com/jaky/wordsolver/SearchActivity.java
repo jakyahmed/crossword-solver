@@ -21,7 +21,7 @@
 //
 ///////////////////////////////////////////////////////////////////////////////
 
-package org.billthefarmer.crossword;
+package com.jaky.wordsolver;
 
 import android.app.ActionBar;
 import android.app.Activity;
